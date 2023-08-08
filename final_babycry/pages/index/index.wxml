@@ -1,0 +1,14 @@
+<!-- 在页面的 WXML 文件中 -->
+<view class="button-sp-are">
+  <image class='background' src="images/background.jpg" mode="aspectFill"></image>
+  <button class="weui-btn" type="primary" size="mini"  bindtap="onClickOpen">开始婴儿哭声情感检测</button>
+  <!-- <button type="warn" size="mini"  bindtap="onClickOff">关灯</button> -->
+  <button size="mini">婴儿情感状态：{{emotion}}</button>
+  <!-- <button size="mini">湿度：{{humidity}}</button> -->
+  <!-- 在合适的位置添加图片标签 -->
+  <!-- <image src="{{ emotionImage }}" mode="aspectFit"></image> -->
+    <!-- 新增一个包裹图片的 view，并设置样式使其居中 -->
+  <view class="image-container">
+  <image src="{{ emotionImage }}" mode="aspectFit"></image>
+  </view>
+</view>
